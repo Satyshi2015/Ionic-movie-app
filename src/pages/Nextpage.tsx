@@ -20,7 +20,7 @@ const Nextpage: React.FC = () => {
 
     const params = new URLSearchParams(window.location.search);
     const code = params.get('Id');
-    const url = String('http://www.omdbapi.com/?i=' + code + '&apikey=6bd5d2e7');
+    const url = String('https://www.omdbapi.com/?i=' + code + '&apikey=6bd5d2e7');
     const data = await axios.get(url)
       .then((response) => {
         //console.log(response.data.Title);
