@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   const [imdbID, setimdbID] = useState([])
 
   const getMovie = (e: any) => {
-    e.preventDefault();
+    
     axios.get('https://www.omdbapi.com/?s=Kids&apikey=6bd5d2e7')
       .then((response) => {
         console.log(response);
