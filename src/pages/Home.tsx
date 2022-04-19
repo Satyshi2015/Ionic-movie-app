@@ -12,7 +12,7 @@ const Home: React.FC = () => {
 
   const getMovie = (e: any) => {
     e.preventDefault();
-    axios.get('http://www.omdbapi.com/?s=Kids&apikey=6bd5d2e7')
+    axios.get('https://www.omdbapi.com/?s=Kids&apikey=6bd5d2e7')
       .then((response) => {
         console.log(response);
         setMovie(response.data.Search)
